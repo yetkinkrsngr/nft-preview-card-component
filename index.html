@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Outfit', sans-serif;
+    }
+    :root{
+      --Soft-blue: hsl(215, 51%, 70%);
+      --Cyan: hsl(178, 100%, 50%);
+      /* (main BG) */
+      --Very-dark-bluee : hsl(217, 54%, 11%);
+      /* (card BG) */
+      --Very-dark-blue : hsl(216, 50%, 16%);
+      /* (line) */
+      --Very-dark-blue : hsl(215, 32%, 27%);
+      --White:hsl(0, 0%, 100%);
+
+      --f-size:18px;
+    }
+    main{
+      min-height: 100vh;
+      background-color: var(--Very-dark-bluee);
+
+    }
+    section{
+      display: flex;
+      justify-content: center;
+    }
+    article{
+      width: 300px;
+      height: 520px;
+      background-color: var(--Very-dark-blue);
+      border-radius: 15px;
+      margin-top: 8%;
+    }
+    .main-iamge{
+      width: 250px;
+      height: 250px;
+      border-radius:15px;
+      margin-left:25px;
+      margin-top: 20px;
+    }
+    .header{
+      color: var(--White);
+      padding-left: 15px;
+      font-weight: 400;
+    }
+    .paragraf{
+      color: var(--Soft-blue);
+      padding-left: 15px;
+      font-weight: 100;
+      font-size: 16px;
+    }
+    .eth{
+      margin-left: 10px;
+    }
+    .etc{
+      color: var(--Cyan);
+      margin-left: 1px;
+    }
+    .imgetc{
+      position: relative;
+      top: 3px;
+    }
+    .clock{
+      margin-left: 90px;
+    }
+    .clock-p{
+      margin-top: -24px;
+      margin-left: 206px;
+      color: var(--Soft-blue);
+    }
+    hr{
+      width: 85%;
+      border:1pt solid var(--Soft-blue);
+    }
+    .img-user{
+      width: 50px;
+      height: 50px;
+      border: 1px solid white;
+      border-radius:50%;
+      margin-left: 20px;
+      margin-top: 10px;      
+    }
+    .p-user{
+      margin-left:90px;
+      margin-top: -40px;
+      color: var(--Soft-blue);
+    }
+    .p-user-w{
+      color: var(--White);
+    }
+    .attribution { font-size: 11px; text-align: center; margin-top: -20px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main>
+    <section>
+      <article>
+        <img src="images/image-equilibrium.jpg" class="main-iamge" alt="">
+       <h1 class="header">Equilibrium #3429</h1> 
+
+       <p class="paragraf">Our Equilibrium collection promotes balance and calm.</p> 
+      
+     <div class="eth">  <img  src="images/icon-ethereum.svg" class="imgetc" alt=""> <span class="etc">0.041 ETH</span> 
+      <img  src="images/icon-clock.svg" class="clock" alt="">
+      <p class="clock-p">3 days left</p>  
+    </div>
+        <hr>
+        <img src="images/image-avatar.png" class="img-user" alt="">
+      <p class="p-user">Creation of <span class="p-user-w">Jules Wyvern</span></p>  
+      </article>
+    </section>
+  </main>
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Yetkin karasungur</a>.
+  </div>
+</body>
+</html>
